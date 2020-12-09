@@ -1,4 +1,8 @@
 /* proprietà generali */
+h6, p{
+  margin: 0;
+  text-align: center;
+}
 section{
   border: 1px solid brown;
 }
@@ -92,4 +96,13 @@ img{
 #white{
 text-align: center;
 color:rgb(255, 255, 255);
+}
+
+/* proprietà footer */
+footer{
+  height: 160px;
+}
+i{
+  font-size: 25px;
+  color: rgb(78, 149, 141);
 }
