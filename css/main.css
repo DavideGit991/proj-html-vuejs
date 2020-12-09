@@ -32,6 +32,22 @@ img{
   /* border: 1px solid yellow; */
   min-height: 50px;
 }
+#btn-black{
+  border-color: rgb(52, 59, 73);
+  background-color: rgb(52, 59, 73)
+}
+#btn-black:hover{
+  border-color:  rgb(78, 149, 141);
+  background-color:  rgb(78, 149, 141);
+}
+#btn-green{
+  border-color: rgb(78, 149, 141,0.7);
+  background-color: rgb(78, 149, 141,0.7);
+}
+#btn-green:hover{
+  border-color: rgb(78, 149, 141,1);
+  background-color: rgb(78, 149, 141,1);
+}
 /* proprietà header */
 
 /* proprietà mini nav */
@@ -62,7 +78,7 @@ img{
 
 /* proprietà sez3 */
 .sez-3{
-  background-color: rgb(85, 160, 152);
+  background-color: rgb(85, 160, 152,0.8);
   height: 200px;
 }
 
