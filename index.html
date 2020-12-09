@@ -8,20 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <title>Law</title>
   </head>
-  <body>
+  <body id="app">
     <!-- header con due nav(nav e main-nav) -->
     <header >
       <!-- nav mini -->
       <nav class="container-fluid mini-nav">
         <div class="container d-flex flex-column justify-content-around align-items-center">
-          <div class="row">
+          <div class="row p-1 d-flex align-items-center">
 
-            <!-- info nav -->
+            <!-- info mini-nav -->
             <div class="col d-flex align-items-center">
               <p>Avada & Associates legal team announce deal to open up oil & gas </p>
             </div>
 
-            <!-- colonna social nav -->
+            <!-- colonna social mini-nav -->
             <div class="col-2 d-flex justify-content-around align-items-center ">
               <i class="fab fa-facebook-square"></i>
               <i class="fab fa-twitter-square"></i>
@@ -32,8 +32,22 @@
         </div>
       </nav>
 
-      <nav class="main-nav">
+      <!-- main nav fixed -->
+      <nav class="container-fluid main-nav position-fixed">
+        <div class="container d-flex flex-column justify-content-around align-items-center">
+          <div class="row p-1 d-flex align-items-center">
 
+            <!-- logo main-nav -->
+            <div class="col-3 d-flex align-items-center">
+              <img src="img/avada-law-logo.png" alt="Responsive image">
+            </div>
+
+            <!-- link main-nav -->
+            <div class="col d-flex justify-content-around align-items-center ">
+
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
