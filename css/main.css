@@ -1,0 +1,41 @@
+/* proprietà generali */
+section{
+  border: 1px solid brown;
+}
+.container-fluid{
+  /* background-color: rgb(0, 0, 0,0.8); */
+  border: 1px solid PURPLE;
+  min-height:50px;
+  padding: 0 0;
+}
+.container{
+  border: 1px solid black;
+  min-height: 40px;
+}
+img{
+  height: auto;
+  width: 100%;
+}
+.row{
+  border: 1px solid red;
+  min-height: 20px;
+  width: 100%;
+}
+.col{
+  border: 1px solid yellow;
+  min-height: 50px;
+}
+
+/* proprietà sez1 */
+.sez-1{
+  background-color: rgb(245, 245, 245);
+  height: 400px;
+}
+.sez-1 >.row{
+  background-color: rgb(255, 255, 255);
+}
+
+/* proprietà sez2 */
+.sez-2{
+  height: 300px;
+}
