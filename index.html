@@ -8,9 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <title>Law</title>
   </head>
-  <body id="app">
+  <body >
     <!-- header con due nav(nav e main-nav) -->
-    <header >
+    <header id="app">
       <!-- nav mini -->
       <nav class="container-fluid mini-nav">
         <div class="container d-flex flex-column justify-content-around align-items-center">
@@ -43,8 +43,10 @@
             </div>
 
             <!-- link main-nav -->
-            <div class="col d-flex justify-content-around align-items-center ">
-
+            <div   class="col d-flex justify-content-around align-items-center ">
+              <div v-for="link in arrayLink" :key="link.key" >
+                <a href="#">{{link.nome}}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -61,7 +63,7 @@
       <section class="sez-1 d-flex justify-content-center align-items-center">
 
         <div class="container d-flex justify-content-center">
-          <div class="row">
+          <div class="row info-sez-1">
 
             <!-- devo inserire tre colonne uguali farne una e duplicarla MANCANO I BOTTONI-->
             <div class="col d-flex flex-column justify-content-around align-items-center">
@@ -71,9 +73,7 @@
               <div class="paragrafo">
                 <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
               </div>
-              <div class="button">
-
-              </div>
+              <button type="button" class="btn btn-primary btn-lg">Learn more</button>
             </div>
 
             <div class="col d-flex flex-column justify-content-around align-items-center">
@@ -83,9 +83,8 @@
               <div class="paragrafo">
                 <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
               </div>
-              <div class="button">
+              <button type="button" class="btn btn-primary btn-lg">Learn more</button>
 
-              </div>
             </div>
 
             <div class="col d-flex flex-column justify-content-around align-items-center">
@@ -95,9 +94,8 @@
               <div class="paragrafo">
                 <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
               </div>
-              <div class="button">
+              <button type="button" class="btn btn-primary btn-lg">Learn more</button>
 
-              </div>
             </div>
 
           </div>
@@ -170,7 +168,7 @@
               <h5>QUESTIONS ABOUT A JUDICIAL ISSUE? ASK OUR EXPERTS.</h5>
             </div>
             <div class="col-3 d-flex justify-content-center align-items-center">
-              <button type="button" name="button">Ask an Expert</button>
+              <button type="button" name="button" class="btn btn-primary btn-lg">Ask an Expert</button>
             </div>
           </div>
         </div>
@@ -302,7 +300,7 @@
       <section class="sez-6 d-flex justify-content-center align-items-center">
 
         <div class="container d-flex justify-content-center">
-          <div class="row">
+          <div class="row info-sez-6">
 
             <!-- devo inserire tre colonne uguali farne una e duplicarla -->
             <div class="col d-flex flex-column justify-content-around align-items-center">
@@ -344,11 +342,11 @@
       </section>
 
       <!-- sezione 7 -->
-      <section>
+
         <section class="sez-7 d-flex justify-content-center align-items-center">
           <div class="container d-flex justify-content-center">
-          <div class="row">
-            <div id="white" class="col p-2 d-flex flex-column justify-content-center align-items-center">
+          <div class="row info-sez-7">
+            <div id="white" class="col p-2 d-flex flex-column justify-content-around align-items-center">
               <div class="title">
                 <h5>LET’S WORK TOGETHER</h5>
               </div>
@@ -356,13 +354,11 @@
 
               </div>
               <p>“We have worked with Avada Law for the past 15 years. As we have grown and evolved, what I have valued most about our relationship is that Avada Law know us and our business.”</p>
-              <button type="button" name="button"> MAKE ENQUIRY</button>
+              <button type="button" name="button" class="btn btn-primary btn-lg"> MAKE ENQUIRY</button>
             </div>
           </div>
           </div>
         </section>
-
-      </section>
 
 
       </div>

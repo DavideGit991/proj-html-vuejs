@@ -1,5 +1,5 @@
 /* proprietà generali */
-h6, p{
+h5,h6, p{
   margin: 0;
   text-align: center;
 }
@@ -49,7 +49,9 @@ img{
   background-color: rgb(245, 245, 245);
   height: 530px;
 }
-.sez-1 >.row{
+.info-sez-1{
+  border-top: 2px solid rgb(78, 149, 141);
+  min-height: 350px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -102,12 +104,19 @@ img{
 .sez-6{
   height: 900px;
 }
+.info-sez-6{
+  min-height: 650px;
+  border-top: 2px solid rgb(78, 149, 141);
+}
 
 /* proprietà sez7 */
 .sez-7  {
   height: 600px;
   background-image: url("img/where-we-work-parallax.jpg");
   /* background-color: blue; */
+}
+.info-sez-7{
+  min-height: 250px;
 }
 #white{
 text-align: center;
