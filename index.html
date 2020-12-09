@@ -10,8 +10,10 @@
     <title>Law</title>
   </head>
   <body >
-    <!-- header con due nav(nav e main-nav) -->
-    <header id="app">
+  <div id="app">
+
+<!-- header con due nav(nav e main-nav) -->
+    <header >
 
       <!-- nav mini -->
       <nav class="container-fluid mini-nav ":class="active==true?'none':''">
@@ -20,15 +22,14 @@
 
             <!-- info mini-nav -->
             <div class="col d-flex align-items-center">
-              <p>Avada & Associates legal team announce deal to open up oil & gas </p>
+              <p>{{descrizioneNav}}</p>
             </div>
 
             <!-- colonna social mini-nav -->
-            <div class="col-2 d-flex justify-content-around align-items-center ">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube-square"></i>
+            <div   class="col-2 d-flex justify-content-around align-items-center ">
+              <a v-for="icon in arraySocial"href="#">
+                <i :class="icon"> </i>
+              </a>
             </div>
           </div>
         </div>
@@ -42,7 +43,7 @@
 
               <!-- logo main-nav -->
               <div class="col-3 d-flex align-items-center">
-                <img src="img/avada-law-logo.png" alt="Responsive image">
+                <img :src="logo" alt="Responsive image">
               </div>
 
               <!-- link main-nav -->
@@ -55,11 +56,6 @@
           </div>
         </nav>
 
-
-
-
-
-
     </header>
 
     <!-- main con JUMBOTRON e 7 sezioni -->
@@ -68,7 +64,7 @@
       <div class="container-fluid ">
           <img src="img/video_law_home_preview.jpg" class="img-fluid" alt="Responsive image">
 
-      <!-- sezione1 -->
+<!-- sezione1 -->
       <section class="sez-1 d-flex justify-content-center align-items-center">
 
         <div class="container d-flex justify-content-center">
@@ -87,7 +83,7 @@
 
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <div class="title">
-                <h4>WHO WE ARE</h4>
+                <h4>WHAT WE DO</h4>
               </div>
               <div class="paragrafo">
                 <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
@@ -98,7 +94,7 @@
 
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <div class="title">
-                <h4>WHO WE ARE</h4>
+                <h4>WHERE WE WORK</h4>
               </div>
               <div class="paragrafo">
                 <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
@@ -112,7 +108,7 @@
 
       </section>
 
-      <!-- sezione2 -->
+<!-- sezione2 -->
       <section class="sez-2 d-flex justify-content-center align-items-center">
         <div class="container d-flex justify-content-center">
           <div class="row">
@@ -132,7 +128,7 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <i class="far fa-check"></i>
               <div class="title">
-                <h4>A GLOBAL VIEW</h4>
+                <h4>EXPERT LAWYERS</h4>
               </div>
               <div class="paragrafo">
                 <p>
@@ -144,7 +140,7 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <i class="far fa-check"></i>
               <div class="title">
-                <h4>A GLOBAL VIEW</h4>
+                <h4>CLIENT FOCUS</h4>
               </div>
               <div class="paragrafo">
                 <p>
@@ -156,7 +152,7 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <i class="far fa-check"></i>
               <div class="title">
-                <h4>A GLOBAL VIEW</h4>
+                <h4>LOCAL KNOWLEDGE</h4>
               </div>
               <div class="paragrafo">
                 <p>
@@ -169,12 +165,12 @@
         </div>
       </section>
 
-      <!-- sezione3 -->
+<!-- sezione3 -->
       <section class="sez-3 d-flex justify-content-center align-items-center">
         <div class="container">
           <div class="row ">
             <div class="col d-flex align-items-center">
-              <h5>QUESTIONS ABOUT A JUDICIAL ISSUE? ASK OUR EXPERTS.</h5>
+              <h4 id="white">QUESTIONS ABOUT A JUDICIAL ISSUE? ASK OUR EXPERTS.</h4>
             </div>
             <div class="col-3 d-flex justify-content-center align-items-center">
               <button type="button" name="button" id="btn-green" class="btn btn-primary btn-lg">Ask an Expert</button>
@@ -183,12 +179,12 @@
         </div>
       </section>
 
-      <!-- sezione4 -->
+<!-- sezione4 -->
       <section class="sez-4 d-flex justify-content-center align-items-center">
         <div class="container d-flex flex-column justify-content-around align-items-center">
 
           <div class="row d-flex flex-column align-items-center">
-            <h5 class="p-3">GLOBAL CHALLENGE. WORLD CLASS RESPONSE</h5>
+            <h4 class="p-3">GLOBAL CHALLENGE. WORLD CLASS RESPONSE</h4>
             <div class="hr "></div>
           </div>
 
@@ -197,7 +193,7 @@
             <!-- prima colonna OUR PEOPLE con 6 box info-->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
               <div class="title ">
-                <h6>OUR PEOPLE</h6>
+                <h5>OUR PEOPLE</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
                 <img src="img/column1-image1.jpg" alt="Responsive image" class="p-1">
@@ -228,7 +224,7 @@
             <!-- seconda colonna AREAS -->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
               <div class="title ">
-                <h6>OUR PRACTICE AREAS</h6>
+                <h5>OUR PRACTICE AREAS</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
                 <img src="img/column2-image1.jpg" alt="Responsive image" class="p-1">
@@ -259,7 +255,7 @@
             <!-- terza colonna PUBLICATIONS -->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
               <div class="title ">
-                <h6>OUR PUBLICATIONS</h6>
+                <h5>OUR PUBLICATIONS</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
                 <img src="img/column3-image1.jpg" alt="Responsive image" class="p-1">
@@ -292,7 +288,7 @@
         </div>
       </section>
 
-      <!-- sezione5 -->
+<!-- sezione5 -->
       <section class="sez-5 d-flex justify-content-center align-items-center">
         <div class="container d-flex justify-content-center">
         <div class="row info-sez-5">
@@ -305,7 +301,7 @@
         </div>
       </section>
 
-      <!--sezione 6 -->
+<!--sezione 6 -->
       <section class="sez-6 d-flex justify-content-center align-items-center">
 
         <div class="container d-flex justify-content-center">
@@ -315,10 +311,10 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <img src="img/law_7.jpg" alt="Responsive image">
               <div class="title">
-                <h4>WHO WE ARE</h4>
+                <h4>INTERNATIONAL</h4>
               </div>
               <div class="paragrafo">
-                <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
 
             </div>
@@ -326,10 +322,10 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <img src="img/law_8.jpg" alt="Responsive image">
               <div class="title">
-                <h4>WHO WE ARE</h4>
+                <h4>PARTNERSHIPS</h4>
               </div>
               <div class="paragrafo">
-                <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
 
             </div>
@@ -337,10 +333,10 @@
             <div class="col d-flex flex-column justify-content-around align-items-center">
               <img src="img/law_3.jpg" alt="Responsive image">
               <div class="title">
-                <h4>WHO WE ARE</h4>
+                <h4>EXCELLENCE</h4>
               </div>
               <div class="paragrafo">
-                <p>Nullam fringilla tristique elit id varius. Nulla lacinia quam nec venenatis dignissim. Vivamus volutpat tempus semper. Cras feugiat mi sit amet risus consectetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
 
             </div>
@@ -350,7 +346,7 @@
 
       </section>
 
-      <!-- sezione 7 -->
+<!-- sezione 7 -->
       <section class="sez-7 d-flex justify-content-center align-items-center">
           <div class="container d-flex justify-content-center">
           <div class="row info-sez-7">
@@ -372,13 +368,13 @@
       </div>
     </main>
 
-    <!-- footer -->
+<!-- footer -->
     <footer class="container-fluid d-flex  justify-content-center align-items-center">
 
         <div class="container d-flex flex-column justify-content-around align-items-center">
           <div class="row">
             <div class="col d-flex align-items-center">
-              <h6>CALL OUR EXPERTS TODAY 1.800.555.6789</h6>
+              <h6>CALL OUR EXPERTS TODAY {{numeroTel}} </h6>
             </div>
           </div>
 
@@ -386,15 +382,14 @@
 
             <!-- info footer -->
             <div class="col d-flex align-items-center">
-              <p>© Copyright 2012 - 2020   |   Avada Theme by Theme Fusion   |   All Rights Reserved   |   Powered by WordPress</p>
+              <p>{{infoFooter}}</p>
             </div>
 
             <!-- colonna social -->
             <div class="col-2 d-flex justify-content-around align-items-center ">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube-square"></i>
+              <a v-for="icon in arraySocial"href="#">
+                <i :class="icon"> </i>
+              </a>
             </div>
           </div>
         </div>
@@ -404,5 +399,6 @@
 
 
     <script src="js/script.js"></script>
+  </div>
   </body>
 </html>

@@ -6,13 +6,13 @@ h5,h6, p{
 .none{
   display: none;
 }
-a:hover{
-  text-decoration: none;
-  color: rgb(78, 149, 141,1);
-  border-top: 2px solid rgb(78, 149, 141,1);
+i{
+  font-size: 25px;
+  color: rgb(78, 149, 141);
 }
+
 p,a{
-  color: rgb(59, 66, 81);
+  color: rgb(116, 116, 116);
 }
 section{
   /* border: 1px solid brown; */
@@ -44,25 +44,19 @@ img{
   border-color: rgb(52, 59, 73);
   background-color: rgb(52, 59, 73)
 }
-#btn-black:hover{
-  border-color:  rgb(78, 149, 141);
-  background-color:  rgb(78, 149, 141);
-}
+
 #btn-green{
   border-color: rgb(78, 149, 141,0.7);
   background-color: rgb(78, 149, 141,0.7);
 }
-#btn-green:hover{
-  border-color: rgb(78, 149, 141,1);
-  background-color: rgb(78, 149, 141,1);
-}
+
 /* proprietà header */
 
 /* proprietà mini nav */
 .mini-nav{
   background-color: rgb(245, 245, 245);
   height: 50px;
-
+  border-top: 2px solid rgb(78, 149, 141,1);
 }
 /* proprietà main-nav */
 .main-nav{
@@ -155,7 +149,19 @@ color:rgb(255, 255, 255);
 footer{
   height: 160px;
 }
-i{
-  font-size: 25px;
-  color: rgb(78, 149, 141);
+
+
+/* proprietà hover */
+#btn-green:hover{
+  border-color: rgb(78, 149, 141,1);
+  background-color: rgb(78, 149, 141,1);
+}
+#btn-black:hover{
+  border-color:  rgb(78, 149, 141);
+  background-color:  rgb(78, 149, 141);
+}
+a:hover{
+  text-decoration: none;
+  color: rgb(78, 149, 141,1);
+  border-top: 2px solid rgb(78, 149, 141,1);
 }
