@@ -66,3 +66,15 @@ img{
   height: 50%;
   width: auto;
 }
+
+/* proprietà sez5 */
+.sez-5{
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  height: 400px;
+}
+
+#logo{
+  height: auto;
+  width: 10%;
+  }
