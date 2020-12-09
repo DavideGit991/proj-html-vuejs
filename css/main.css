@@ -3,7 +3,15 @@ h5,h6, p{
   margin: 0;
   text-align: center;
 }
-p{
+.none{
+  display: none;
+}
+a:hover{
+  text-decoration: none;
+  color: rgb(78, 149, 141,1);
+  border-top: 2px solid rgb(78, 149, 141,1);
+}
+p,a{
   color: rgb(59, 66, 81);
 }
 section{
@@ -54,9 +62,11 @@ img{
 .mini-nav{
   background-color: rgb(245, 245, 245);
   height: 50px;
+
 }
 /* proprietà main-nav */
 .main-nav{
+  min-height:100px;
   z-index: 999;
   background-color: rgb(255, 255, 255,0.9)
 }
@@ -106,14 +116,16 @@ img{
 /* proprietà sez5 */
 .sez-5{
   color: rgb(255, 255, 255);
-  background-image: url("img/showeare-parallax.jpg");
+  background-image: url("../img/showeare-parallax.jpg");
   /* background-color: blue; */
   height: 400px;
 }
-
+.info-sez-5{
+  min-height: 200px;
+}
 #logo{
   height: auto;
-  width: 10%;
+  width: 15%;
 }
 
 /* proprietà sez6 */
@@ -128,7 +140,7 @@ img{
 /* proprietà sez7 */
 .sez-7  {
   height: 600px;
-  background-image: url("img/where-we-work-parallax.jpg");
+  background-image: url("../img/where-we-work-parallax.jpg");
   /* background-color: blue; */
 }
 .info-sez-7{

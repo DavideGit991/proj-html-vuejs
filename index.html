@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -11,8 +12,9 @@
   <body >
     <!-- header con due nav(nav e main-nav) -->
     <header id="app">
+
       <!-- nav mini -->
-      <nav class="container-fluid mini-nav">
+      <nav class="container-fluid mini-nav ":class="active==true?'none':''">
         <div class="container d-flex flex-column justify-content-around align-items-center">
           <div class="row p-1 d-flex align-items-center">
 
@@ -33,24 +35,31 @@
       </nav>
 
       <!-- main nav fixed -->
-      <nav class="container-fluid main-nav position-fixed">
-        <div class="container d-flex flex-column justify-content-around align-items-center">
-          <div class="row p-1 d-flex align-items-center">
 
-            <!-- logo main-nav -->
-            <div class="col-3 d-flex align-items-center">
-              <img src="img/avada-law-logo.png" alt="Responsive image">
-            </div>
+        <nav id="main-nav" :class="active==true?'fixed-top':''" class="container-fluid main-nav d-flex align-items-center  ">
+          <div class="container d-flex flex-column justify-content-around align-items-center">
+            <div class="row p-1 d-flex align-items-center">
 
-            <!-- link main-nav -->
-            <div   class="col d-flex justify-content-around align-items-center ">
-              <div v-for="link in arrayLink" :key="link.key" >
-                <a href="#">{{link.nome}}</a>
+              <!-- logo main-nav -->
+              <div class="col-3 d-flex align-items-center">
+                <img src="img/avada-law-logo.png" alt="Responsive image">
+              </div>
+
+              <!-- link main-nav -->
+              <div   class="col d-flex justify-content-around align-items-center ">
+                <div v-for="link in arrayLink" :key="link.key" >
+                  <a href="#">{{link.nome}}</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+
+
+
+
+
+
     </header>
 
     <!-- main con JUMBOTRON e 7 sezioni -->
@@ -286,10 +295,10 @@
       <!-- sezione5 -->
       <section class="sez-5 d-flex justify-content-center align-items-center">
         <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="col p-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="row info-sez-5">
+          <div class="col p-2 d-flex flex-column justify-content-around align-items-center">
             <img id="logo" class="p-2" src="img/envato-logo.png" alt="Responsive image">
-            <p>“We have worked with Avada Law for the past 15 years. As we have grown and evolved, what I have valued most about our relationship is that Avada Law know us and our business.”</p>
+            <p id="white">“We have worked with Avada Law for the past 15 years. As we have grown and evolved, what I have valued most about our relationship is that Avada Law know us and our business.”</p>
             <h6>Nigel Rawlinson • Senior Partner</h6>
           </div>
         </div>

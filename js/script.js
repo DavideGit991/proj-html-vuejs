@@ -4,7 +4,10 @@ var app=new Vue({
   el:"#app",
 
   data:{
+    active: false,
+    arraySocial:[
 
+    ],
     arrayLink:[
       {
         nome:"Home"
@@ -28,7 +31,20 @@ var app=new Vue({
         nome:"Contact"
       }
     ]
-  }
+  },
+
+// funzione per far scomparire la mini-nav allo scroll della pagina bind class riga 17 39 html
+ mounted(){
+ window.document.onscroll = () => {
+     let navBar = document.getElementById('main-nav');
+     if(window.scrollY > navBar.offsetTop){
+       this.active = true;
+       } else {
+       this.active = false;
+     }
+   }
+ }
+
 
 
 
