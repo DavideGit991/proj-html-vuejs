@@ -39,3 +39,9 @@ img{
 .sez-2{
   height: 300px;
 }
+
+/* proprietà sez3 */
+.sez-3{
+  background-color: rgb(85, 160, 152);
+  height: 100px;
+}
