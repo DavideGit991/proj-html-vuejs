@@ -43,13 +43,15 @@
 
               <!-- logo main-nav -->
               <div class="col-3 d-flex align-items-center">
-                <img :src="logo" alt="Responsive image">
+                <a href="#">
+                  <img :src="logo" alt="Responsive image">
+                </a>
               </div>
 
               <!-- link main-nav -->
               <div   class="col d-flex justify-content-around align-items-center ">
                 <div v-for="link in arrayLink" :key="link.key" >
-                  <a href="#">{{link.nome}}</a>
+                  <a id="link" href="#">{{link.nome}}</a>
                 </div>
               </div>
             </div>
@@ -62,7 +64,7 @@
     <main>
 
       <div class="container-fluid ">
-        
+
 <!-- jumbotron -->
         <div class="jumbo"></div>
 
@@ -195,8 +197,8 @@
             <!-- inserisco 3 colonne in flex  -->
             <!-- prima colonna OUR PEOPLE con 6 box info-->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
-              <div class="title ">
-                <h5>OUR PEOPLE</h5>
+              <div class="title p-2">
+                <h5 >OUR PEOPLE</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
                 <img src="img/column1-image1.jpg" alt="Responsive image" class="p-1">
@@ -226,7 +228,7 @@
 
             <!-- seconda colonna AREAS -->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
-              <div class="title ">
+              <div class="title p-2 ">
                 <h5>OUR PRACTICE AREAS</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
@@ -257,7 +259,7 @@
 
             <!-- terza colonna PUBLICATIONS -->
             <div class="col d-flex flex-column justify-content-around align-items-center ">
-              <div class="title ">
+              <div class="title p-2">
                 <h5>OUR PUBLICATIONS</h5>
               </div>
               <div class="box-info p-2 d-flex align-items-center ">
@@ -377,7 +379,7 @@
         <div class="container d-flex flex-column justify-content-around align-items-center">
           <div class="row">
             <div class="col d-flex align-items-center">
-              <h6>CALL OUR EXPERTS TODAY {{numeroTel}} </h6>
+              <h6>CALL OUR EXPERTS TODAY <a href="#">{{numeroTel}}</a> </h6>
             </div>
           </div>
 
@@ -385,7 +387,10 @@
 
             <!-- info footer -->
             <div class="col d-flex align-items-center">
-              <p>{{infoFooter}}</p>
+              <p>{{infoFooter}}
+                <a href="https://wordpress.org/">{{linkWordPress}}
+                </a>
+              </p>
             </div>
 
             <!-- colonna social -->

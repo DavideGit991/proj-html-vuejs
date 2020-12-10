@@ -1,5 +1,5 @@
 /* proprietà generali */
-h5,h6, p{
+h4,h5,h6, p,span{
   margin: 0;
   text-align: center;
 }
@@ -10,8 +10,13 @@ i{
   font-size: 25px;
   color: rgb(78, 149, 141);
 }
-
-p,a{
+span,h5,h4{
+  font-weight: bold;
+}
+h4,h5{
+  color: rgb(52, 59, 73);
+}
+p,a,span{
   color: rgb(116, 116, 116);
 }
 section{
@@ -42,7 +47,7 @@ img{
 }
 #btn-black{
   border-color: rgb(52, 59, 73);
-  background-color: rgb(52, 59, 73)
+  background-color: rgb(52, 59, 73);
 }
 
 #btn-green{
@@ -56,7 +61,7 @@ img{
 .mini-nav{
   background-color: rgb(245, 245, 245);
   height: 50px;
-  border-top: 2px solid rgb(78, 149, 141,1);
+  border-top: 3px solid rgb(78, 149, 141,1);
 }
 /* proprietà main-nav */
 .main-nav{
@@ -65,15 +70,17 @@ img{
   background-color: rgb(255, 255, 255,1)
 }
 
+
 /* propietà jumbotron */
 .jumbo{
-  height: 800px;
+  height: 400px;
   background-image: url("../img/video_law_home_preview.jpg" );
+  background-position: 0 -150px;
 }
 /* proprietà sez1 */
 .sez-1{
   background-color: rgb(245, 245, 245);
-  height: 530px;
+  height: 500px;
 }
 .info-sez-1{
   border-top: 2px solid rgb(78, 149, 141);
@@ -100,7 +107,7 @@ img{
   height: 1100px;
 }
 .hr{
-  border: 1px solid rgb(245, 245, 245);
+  border: 1px solid rgb(84,84,84) ;
   width: 20%;
 }
 .box-info{
@@ -166,8 +173,12 @@ footer{
   border-color:  rgb(78, 149, 141);
   background-color:  rgb(78, 149, 141);
 }
-a:hover{
+#link:hover{
   text-decoration: none;
   color: rgb(78, 149, 141,1);
   border-top: 2px solid rgb(78, 149, 141,1);
+}
+i:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }

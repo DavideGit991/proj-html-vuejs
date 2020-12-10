@@ -32,7 +32,8 @@ var app=new Vue({
       }
     ],
     numeroTel:"1.800.555.6789",
-    infoFooter:"© Copyright 2012 - 2020   |   Avada Theme by Theme Fusion   |   All Rights Reserved   |   Powered by WordPress"
+    infoFooter:"© Copyright 2012 - 2020   |   Avada Theme by Theme Fusion   |   All Rights Reserved   |   Powered by " ,
+    linkWordPress:"WordPress"
   },
 
 
