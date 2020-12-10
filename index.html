@@ -387,9 +387,8 @@
 
             <!-- info footer -->
             <div class="col d-flex align-items-center">
-              <p>{{infoFooter}}
-                <a href="https://wordpress.org/">{{linkWordPress}}
-                </a>
+              <p v-for="elem in infoFooter" :key="elem.key">
+                {{elem}}
               </p>
             </div>
 
